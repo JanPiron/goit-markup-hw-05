@@ -175,6 +175,7 @@ background: #FFFFFF
     padding-bottom: 32px;
     padding-top:32px;
      */
+     z-index:-1;
 
 }
 
@@ -424,6 +425,7 @@ background: #FFFFFF
     justify-content: center;
     gap:30px;
     position:relative;
+    z-index:-1;
     
     
 }
@@ -777,10 +779,8 @@ font-family: 'Roboto';
    position:relative;
    /* position:fixed; */
    /* z-index:99; */
-
-    
-    
 }
+
 
 .modal-btn {
     color:black;
@@ -791,11 +791,18 @@ font-family: 'Roboto';
     position:absolute;
     z-index: 5;
     cursor:pointer;
+    align-items: center;
 }
 
 .modal > .modal-btn {
     top: 8px;
     right: 8px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 
