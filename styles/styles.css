@@ -29,37 +29,30 @@ background: #FFFFFF
         padding-bottom: 32px;
         padding-right: 371px;
         color: #212121;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item {
     color: #757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
 
 .contact-item:hover .item-envelope {
     fill:#2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .contact-item:hover .item-smartphone {
     fill: #2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
-
-
 
 
 .header-item:hover {
     color: #2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
 
 
 .logo-colour {
@@ -70,8 +63,6 @@ background: #FFFFFF
 }
 .logo:hover {
     color: #2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -171,10 +162,6 @@ background: #FFFFFF
     display:flex;
     list-style: none;
     justify-content: center;
-    /* padding-right:46px;
-    padding-bottom: 32px;
-    padding-top:32px;
-     */
 }
 
 
@@ -347,6 +334,8 @@ background: #FFFFFF
         padding-right:93px;
         padding-top:24px;
         padding-bottom: 25px; */
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -475,34 +464,39 @@ background: #FFFFFF
     gap:30px;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    cursor:pointer;
 }
 
 .item-envelope {
     margin-right:10px;
     fill:#757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill #2196F3;
 }
 
 a:hover {
     fill: #2196F3;
-    transition: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.item-envelope:focus {
+/* .item-envelope:focus {
     fill: #2196F3;
-}
+} */
 
 .item-smartphone {
     margin-right:10px;
     fill:#757575;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill #2196F3;
 }
 
-.item-smartphone:hover,
+/* .item-smartphone:hover,
 .item-smartphone:focus {
-    fill: #2196F3;
-    transition: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  
+    
+} */
 
 .icon-box {
     display:flex;
@@ -550,37 +544,44 @@ a:hover {
     height:44px;
     align-items:center;
     border-radius:50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* 
 .portfolio-list-item:hover {
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor:pointer;
-}
+} */
 
 .portfolio-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
+/* .portfolio-list-item {
+    transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill #2196F3;
+
+} */
+
 
 .list-item-social:hover,
 .list-item-social:focus {
     background-color: #2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
-    fill:#AFB1B8
+    fill:#AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .social-icon:hover,
 .social-icon:focus {
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: #FFFFFF;
     fill: #FFFFFF;
 }
@@ -588,10 +589,6 @@ a:hover {
 .list-item-social:hover .social-icon {
     fill: #FFFFFF;
     fill: #FFFFFF;
-
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .client-list {
@@ -609,6 +606,8 @@ a:hover {
         border-radius: 4px;
         align-content: center;
         fill:rgba(175, 177, 184, 1);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -617,8 +616,6 @@ a:hover {
     fill: #2196F3;
     fill: #2196F3;
     border-color: #2196F3;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -723,9 +720,11 @@ font-family: 'Roboto';
         background: rgba(33, 150, 243, 0.9);
         position:absolute;
         bottom:0;
+        transition-property: transform;
         transform: translateY(100%);
-        transition: transform 250ms;
+        transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .overflow-div {
@@ -736,9 +735,9 @@ font-family: 'Roboto';
 }
 
 .portfolio-list-item:hover .overlay {
-    transition: bottom 250ms;
-    transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: bottom 250ms;
+    transition: transform 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
     transform:translateY(0);
 }
 
