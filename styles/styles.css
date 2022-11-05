@@ -38,7 +38,7 @@ background: #FFFFFF
     color: #757575;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill; 
+    transition-property: fill color; 
 }
 
 .contact-item:hover .item-envelope {
@@ -475,7 +475,7 @@ transition: 250ms;
     fill:#757575;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill #2196F3;
+    transition-property: fill;
 }
 
 
@@ -589,6 +589,18 @@ a:hover {
     transition-property: fill;
 }
 
+.social-icon-footer {
+    fill: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
+
+/* .social-icon-footer:hover,
+.social-icon-footer:focus {
+    fill: #FFFFFF;
+    fill: #FFFFFF;
+} */
 
 .social-icon:hover,
 .social-icon:focus {
@@ -644,6 +656,8 @@ a:hover {
 
 .footer-social-item {
     background-color:rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+     
     
 }
 
